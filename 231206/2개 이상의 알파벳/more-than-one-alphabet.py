@@ -6,6 +6,7 @@ def cal(A):
         else:
             dic[i] = 1
     if len(dic) > 3:
+        print(len(dic))
         return print("Yes")
     else:
         return print("No")
