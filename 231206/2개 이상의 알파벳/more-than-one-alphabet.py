@@ -1,15 +1,14 @@
 def cal(A):
-    cnt = 0
+    dic = {}
     for i in range(len(A)-1):
-        st = A[i]
-        for k in range(i, len(A)-1):
-            if st != A[k]:
-                cnt += 1
-            if cnt < 3:
-                return print("Yes")
-        if cnt < 3:
-            return print("Yes")
-    return print("No")
+        if A[i] in dic:
+            dic[i] += 1
+        else:
+            dic[i] = 1
+    if len(dic) > 3:
+        return print("Yes")
+    else:
+        return print("No")
     
     
 
