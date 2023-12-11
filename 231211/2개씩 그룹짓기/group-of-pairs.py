@@ -4,9 +4,8 @@ a = list(map(int, input().split()))
 aa = sorted(a)
 bb = list(reversed(aa))
 
-
+max = 0
 for i in range(n):
-    max = 0
     now = aa[i] + bb[i]
     if now > max:
         max = now
