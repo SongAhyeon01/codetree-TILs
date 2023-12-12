@@ -14,4 +14,12 @@ for i in range(m2):
     ss2 += day_of_mon[i]
 ss2 += d2
 
-print(ss2-ss1)
+gap = ss2-ss1
+if gap == 0:
+    print(what_day[0])
+elif gap > 0:
+    my_day = gap%7
+    print(what_day[my_day])
+else:
+    my_day = gap%7
+    print(what_day[my_day])
