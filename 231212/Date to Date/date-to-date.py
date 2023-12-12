@@ -13,4 +13,7 @@ for i in range(m2+1):
 k2 += d2
 
 
-print(k2-k1)
+if k2 == k1:
+    print(0)
+else:
+    print(k2-k1)
