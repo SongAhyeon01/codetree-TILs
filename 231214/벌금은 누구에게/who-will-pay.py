@@ -9,3 +9,5 @@ for i in range(m):
     if s_list[s] >= k:
         print(s)
         break
+else:
+    print(-1)
