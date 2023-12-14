@@ -41,9 +41,9 @@ for i in range(1, m+1):
 
 
 
-for x in range(len(A)):
-    if x != 0 and A[x] == B[x]:
+for x in range(1, len(A)):
+    if A[x] == B[x]:
         print(x)
         break
-    else:
-        print(-1)
+else: 
+    print(-1)
