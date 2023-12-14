@@ -11,8 +11,12 @@ list = [int(input()) for _ in range(n)]
 
 max_cnt = 1
 cnt = 1
-for i in range(n):
-    if i == 0 or list[i] != list[i-1]:
+
+if list[0] == list[1]:
+    cnt += 1
+
+for i in range(1, n):
+    if list[i] != list[i-1]:
         if cnt >= max_cnt:
             max_cnt = cnt
             cnt = 1
