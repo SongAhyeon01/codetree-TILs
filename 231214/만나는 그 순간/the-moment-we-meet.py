@@ -45,3 +45,5 @@ for x in range(len(A)):
     if x != 0 and A[x] == B[x]:
         print(x)
         break
+    else:
+        print(-1)
