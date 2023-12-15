@@ -13,7 +13,7 @@ public class Main {
         }
 
         double avg = Arrays.stream(arr).average().orElse(0);
-        System.out.print(String.format("%.1f", avg));
+        System.out.print(avg);
 
     }
 }
