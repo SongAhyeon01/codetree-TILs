@@ -12,8 +12,9 @@ public class Main {
             arr[i] = s;
         }
 
-        double avg = Arrays.stream(arr).average().orElse(0);
-        System.out.print(avg);
+        double sum = Arrays.stream(arr).sum();
+        double avg = sum / 8;
+        System.out.print(String.format("%.1f", avg));
 
     }
 }
