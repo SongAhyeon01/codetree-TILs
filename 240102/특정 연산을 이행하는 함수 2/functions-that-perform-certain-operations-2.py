@@ -11,4 +11,8 @@ for n in range(len(a)):
     else:
         a[n] = round(a[n])
 
-print(*a)
+print(max(a), end=' ')
+print(min(a), end=' ')
+for n in a:
+    if n != max(a) and n != min(a):
+        print(n)
